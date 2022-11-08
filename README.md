@@ -23,4 +23,4 @@ IMPLEMENTATION:-
 I have implemented it using simple HTMl,CSS and JS.The entire encryption and decryption code is written in javascript.Here,in phase 1 we encrypt using vigenere and then use polybius in phase 2 and while decryption do the reverse i.e use polybius first and then vigenere.
 The code is very simple and structured.This project is under the course "Number Theory & Cryptography" related with degree of Mtech (CSIS) 1st year at NIT,Karnataka,Surathkal.For any query regarding this project and paper,you can mail me at kalashjha1110@gmail.com
 
-Website link:- https://kalash1110.github.io/Crypto_project/Crypto_project/normal.html
+Website link:- https://kalash1110.github.io/Design-of-Hybrid-Cryptography-System-based-on-Vigenere-Cipher-and-Polybius-Cipher/Crypto_project/normal.html
