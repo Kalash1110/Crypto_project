@@ -1,6 +1,13 @@
-# Crypto_project
-ABSTRACT:- 
+-----------------------------------------------------------------------------------------------------------
+#DESIGN OF HYBRID CRYPTOGRAPHY SYSTEM BASED ON VIGENERE CIPHER AND POLYBIUS CIPHER
+---------------------------------------------------------------------------------------------------------
 
+
+------------------------------------------------------------------------------------------------------------------
+REFER TO MASTER BRANCH FOR FILES
+--------------------------------------------------------------------------------------------------------------------
+ABSTRACT:- 
+------------------------------------------------------------------------------------------------------------------------
 This is an implementation of a research paper named as "Design of Hybrid Cryptography System based on Vigenere Cipher and Polybius Cipher". The link of the paper is :- https://ieeexplore.ieee.org/document/9199997 .
 The paper addresses the problem of weak encryption techniques due to the use of classical encryption techniques as in we have the Vigenère cipher and Polybius cipher for instance. Even though Vigenère
 cipher handles the frequency analysis problem quite well but due to its nature of repeating keys, if during cryptanalysis, we are able to find the length of the key using kasiski’s examination or Friedmann's
@@ -18,9 +25,14 @@ This altered hybrid combination of the Polybius and Vigenère Cipherresults in a
 force attacks, cryptanalysis, frequency analysisis likewise troublesome because of utilization of product tables for encryption. Even though, the hybrid cipher is secure but still this space requires genuine
 research and it requires more execution and checks on security attacks and performance analysis on messages.
 
-IMPLEMENTATION:-
 
+-------------------------------------------------------------------------------------------------------------------------
+IMPLEMENTATION:-
+--------------------------------------------------------------------------------------------------------------------------
 I have implemented it using simple HTMl,CSS and JS.The entire encryption and decryption code is written in javascript.Here,in phase 1 we encrypt using vigenere and then use polybius in phase 2 and while decryption do the reverse i.e use polybius first and then vigenere.
 The code is very simple and structured.This project is under the course "Number Theory & Cryptography" related with degree of Mtech (CSIS) 1st year at NIT,Karnataka,Surathkal.For any query regarding this project and paper,you can mail me at kalashjha1110@gmail.com
 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
 Website link:- https://kalash1110.github.io/Design-of-Hybrid-Cryptography-System-based-on-Vigenere-Cipher-and-Polybius-Cipher/Crypto_project/normal.html
+----------------------------------------------------------------------------------------------------------------------------------------------------
