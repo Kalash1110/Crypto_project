@@ -1,0 +1,113 @@
+body {
+  background-image: url("file5.jpg");
+  color: #ffffff;
+}
+body {
+  background-color: black;
+  color: white;
+}
+h1 {
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #3eb489;
+  text-align: center;
+  font-size: 50px;
+}
+.label {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+#key {
+  padding: 10px;
+  padding-left: 30px;
+}
+input {
+  font-family: cursive;
+}
+.box {
+  margin-top: 20px;
+  padding-top: 15px;
+  background-color: #9dc3c2;
+  font-size: 25px;
+  padding-left: 25px;
+  color: black;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+#btn-encript,
+#btn-decript {
+  height: 60px;
+  width: 150px;
+  background-color: #d0efb1;
+  color: black;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+#clear_one,
+#clear_two {
+  margin-left: 25px;
+  height: 60px;
+  width: 150px;
+  background-color: #4d7298;
+  color: blanchedalmond;
+  border-radius: 30px;
+  font-size: 20px;
+}
+.button {
+  text-align: center;
+  size: 40px;
+}
+#btn-encript:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+#btn-decript:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+#clear_one:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+#clear_two:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+
+header {
+  padding-top: 3rem;
+  padding-left: 40px;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+header .navbar {
+  width: 65%;
+}
+header .navbar ul li span {
+  padding-left: 20px;
+}
+header .navbar ul li {
+  display: block;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  background:#ADD8E6;
+  font-size: 20px;
+  border-radius: 5rem;
+}
+header .navbar ul li:hover {
+  background:#3eb489;
+}
+hr.class-2 {
+  margin-top: 100px;
+  border-top: 2px solid #8c8b8b;
+  width: 85%;
+}
+
+
