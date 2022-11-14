@@ -1,14 +1,12 @@
 // ParticlesJS Config.
 
-
-
 var Hybrid = (function () {
   function encrypt(str, keyword) {
     //Vigenere Encyrption Part
     key = keyword;
 
     key = key.split("");
-    if (str.length == key.length) {
+    if (str.length <= key.length) {
       key = keyword;
     } else {
       let temp = key.length;
@@ -17,7 +15,6 @@ var Hybrid = (function () {
       }
       key = key.join("");
     }
-    
 
     let cipher_text_vigenere = "";
 
@@ -61,7 +58,7 @@ var Hybrid = (function () {
   function decrypt(encrypted_text, key) {
     //Polybius decryption
     let orig_text = "";
-    console.log(key)
+    console.log(key);
     var matrix = new Array(5);
 
     for (var i = 0; i < matrix.length; i++) {
@@ -88,16 +85,17 @@ var Hybrid = (function () {
 
     //Viegenre decryption
     str1 = Decrypt_phase1;
+    keyword = key;
     key = key.split("");
-    if (str1.length == key.length) {
-      key = key.join("");
+    if (str1.length <= key.length) {
+      key = keyword;
     } else {
       let temp = key.length;
       for (let i = 0; i < str1.length - temp; i++) {
         key.push(key[i % key.length]);
       }
+      key = key.join("");
     }
-    key = key.join("");
 
     for (let i = 0; i < Decrypt_phase1.length; i++) {
       // converting in range 0-25
@@ -116,7 +114,7 @@ var Hybrid = (function () {
     },
     decrypt: function (text, key) {
       return decrypt(text, key);
-    }
+    },
   };
 })();
 
@@ -135,12 +133,10 @@ var Hybrid = (function () {
     $encryptedtext.value = text;
   });
   $btn_clear_2.addEventListener("click", function () {
-    
-    $encryptedtext.value ="";
+    $encryptedtext.value = "";
   });
   $btn_clear_1.addEventListener("click", function () {
-    
-    $palintext.value ="";
+    $palintext.value = "";
   });
 
   $btnDecript.addEventListener("click", function () {
