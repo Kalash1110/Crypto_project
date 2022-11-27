@@ -31,24 +31,28 @@ var Hybrid = (function () {
     // //POLYBIUS ENCRYPTION PART:-
     let str1 = cipher_text_vigenere;
     let final_cipher = "";
-    for (let i = 0; i < str1.length; i++) {
-      // converting in range 0-25
-      let char = str1[i];
-      let row = Math.floor((char.charCodeAt(0) - "A".charCodeAt(0)) / 5) + 1;
-      let col = ((char.charCodeAt(0) - "A".charCodeAt(0)) % 5) + 1;
+    var matrix = new Array(5);
 
-      if (char == "K") {
-        row = row - 1;
-        col = 5 - col + 1;
-      } else if (char.charCodeAt(0) >= "J".charCodeAt(0)) {
-        if (col == 1) {
-          col = 6;
-          row = row - 1;
-        }
-        col = col - 1;
+    for (var i = 0; i < matrix.length; i++) {
+      matrix[i] = [];
+    }
+    var h = 0;
+    var s = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
+
+    for (var i = 0; i < 5; i++) {
+      for (var j = 0; j < 5; j++) {
+        matrix[i][j] = s[h++];
       }
-
-      final_cipher = final_cipher + col + row;
+    }
+    for (let k = 0; k < str1.length; k++) {
+      // converting in range 0-25
+      for (var i = 0; i < 5; i++) {
+        for (var j = 0; j < 5; j++) {
+          if (matrix[i][j] == str1[k])
+            final_cipher = final_cipher + (j + 1) + (i + 1);
+        }
+      }
+      if (str1[k] == "J") final_cipher = final_cipher + "42";
     }
     let enctext = final_cipher;
 
